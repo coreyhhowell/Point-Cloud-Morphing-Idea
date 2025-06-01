@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Lifecycle Point Cloud Transitions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="controls">
+            <div class="control-group">
+                <label>Lifecycle Stage</label>
+                <input type="range" id="stageSlider" min="0" max="3" step="0.01" value="0">
+                <div>
+                    <button id="stage1" class="stage-btn active">Seed</button>
+                    <button id="stage2" class="stage-btn">Sprout</button>
+                    <button id="stage3" class="stage-btn">Growth</button>
+                    <button id="stage4" class="stage-btn">Mature</button>
+                </div>
+            </div>
+            
+            <div class="control-group">
+                <label>Animation Speed</label>
+                <input type="range" id="speedSlider" min="0.5" max="5" step="0.1" value="2">
+            </div>
+            
+            <div class="control-group">
+                <button id="autoPlay">Auto Play</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        
+        <div id="info">
+            <div class="stage-info" id="stageInfo">Stage 1: Seed</div>
+            <div class="stage-desc" id="stageDesc">The beginning of life, compact and full of potential</div>
+        </div>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
