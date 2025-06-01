@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+button.active {
+    background: linear-gradient(45deg, #FF6B35, #FF8E53);
+}
+
+#info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stage-info {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stage-desc {
+    font-size: 12px;
+    opacity: 0.8;
+}
